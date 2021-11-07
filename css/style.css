@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.pull-left {
+    float: left;
+    width: 300px;
+}
+.pull-right {
+    float: right;
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #EAE1D8;
+}
+
+.page-wrapper {
+    background-color: #F4EFE9;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(100, 100, 100, 0.8 );
+}
+#main-header {
+    padding: 40px 50px;
+}
+#master-title {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 8px;
+}
+#master-description {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+#main-navigation {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.outer-menu-item {
+    float: left;
+    position: relative;
+    color:black;
+}
+.outer-menu-item-selected {
+    background-color: #EAE1D8;
+    color: black;
+}
+.outer-menu-item:hover {
+    background-color: #755139;
+    color: white;
+}
+.menu-title {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.sns {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.sns img {
+    margin-left: 7px;
+}
+
+#content {
+    overflow: hidden;
+}
+#main-section {
+    float: left;
+    width: 720px;
+}
+#main-aside {
+    float: right;
+    width: 200px;
+}
+article {
+    padding: 0 10px 20px 10px;
+}
+
+.aside-list {
+    padding: 10px 0 30px 0;
+}
+.aside-list > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.aside-list li a {
+    margin-left: 8px;
+    font-size: 17px;
+    color: #755139;
+}
+.aside-list li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#intro-section {
+    width: 920px;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.intro h1{
+    margin: 30px 0px;
+    font-size: 30px;
+    color: #755139;
+    text-shadow: 2px 2px #cccccc;
+}
+.intro p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.text-background {
+    background-color: #b39684;
+    color: white;
+}
+.intro h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.intro .vision h3 {
+    line-height: 40px;
+    padding: 10px;
+    background-color: rgb(179, 150, 132, 10%);
+    border-radius: 10px;
+}
+.intro h4 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #755139;
+}
+.intro-pull-left {
+    float: left;
+    width: 450px;
+    height: 282.8px;
+}
+.intro-pull-right {
+    float: right;
+    width: 450px;
+}
+.intro-pull-left2 {
+    float: left;
+    width: 450px;
+    height: 402.8px;
+}
+.intro img {
+    margin-bottom: 40px;
+}
+
+#bookstore-this-section {
+    float: left;
+    width: 460px;
+}
+#bookstore-next-section {
+    float: left;
+    width: 460px;
+}
+.bookstore {
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.bookstore h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.bookstore h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.bookstore a {
+    color: #755139;
+}
+.bookstore p {
+    font-size: 20px;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 35px;
+}
+.bookstore-detail {
+    margin: 5px;
+    padding: 15px;
+    background-color: #f3f1ef;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+#store-this-image-section {
+    float: right;
+    width: 460px;
+}
+#store-next-image-section {
+    float: right;
+    width: 460px;
+}
+.store-image {
+    margin-bottom: 40px;
+    text-align: right;
+}
+.store-image img {
+    margin-right: 35px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+.card {
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    width: 280px;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.26);
+    position: relative;
+}
+.card:nth-child(2n+1) {
+    margin-left: 40px;
+}
+.gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+.text {
+    width: 232px;
+    position: absolute;
+    bottom: 0px;
+    padding: 24px;
+}
+.text h1 {
+    color: white;
+    font-size: 26px;
+}
+.text p {
+    color: white;
+    padding-top: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    text-align: center;
+}
+.description-head h1 {
+    text-align: center;
+    color: #755139;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.description-head img {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+}
+.description img {
+    border-radius: 10px;
+}
+.description-head p {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.product-components h2{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.component p {
+    white-space: pre-line;
+    line-height: 33px;
+    font-size: 18px;
+}
+.component h3 {
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.component img {
+    margin-bottom: 15px;
+}
+
+.store-link {
+    margin: 80px 0px 40px 0px;
+}
+.store-link-button {
+    font-size: 25px;
+    background-color: #cebaae;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.store-link-button:hover {
+    background-color: #755139;
+    color:white;
+    font-weight: bold;
+    
+}
+
+.footer {
+    width: 100%; 
+    height: 125px;
+    background-color: #EAE1D8;
+    color: black;
+    position: relative;
+    margin-top: 24px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(100, 100, 100, 0.3 );
+}
+.footer p {
+    position: absolute;
+    padding: 15px 25px;
+}
+.footer a {
+    color: black;
+}
+
+@media screen and (max-width:767px) and (orientation: portrait) {
+    body {
+        width: auto;
+    }
+    .menu-title {
+        padding: 5px 10px;
+    }
+    .pull-left {
+        width: 195px;
+    }
+    .sns {
+        margin-right: 15px;
+        margin-top: 7px;
+    }
+    .sns img {
+        width: 25px;
+        height: 25px;
+    }
+    #master-title {
+        font-size: 21px;
+    }
+    #master-description {
+        font-size: 15px;
+    }
+    #intro-section {
+        width: auto;
+        float: none;
+    }
+    .intro h1 {
+        font-size: 17px;
+    }
+    .intro p {
+        font-size: 13px;
+    }
+    #bookstore-this-section {
+        float: none;
+        width: auto;
+    }
+    #bookstore-next-section {
+        float: none;
+        width: auto;
+    }
+    .bookstore {
+        margin-left: auto;
+    }
+    .bookstore-detail {
+        width: 250px;
+        margin: auto;
+    }
+    .bookstore h2 {
+        font-size: 16px;
+    }
+    .bookstore h3 {
+        font-size: 16px;
+    }
+    .bookstore p {
+        font-size: 13px;
+    }
+    #store-this-image-section {
+        float: none;
+        width: auto;
+    }#store-next-image-section {
+        float: none;
+        width: auto;
+    }
+    .store-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .store-image img {
+        margin: auto;
+        width: 280px; height: 300px;
+    }
+    .footer {
+        font-size: 14px;
+        height: 110px;
+    }
+
+    #main-section {
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+    .card {
+        margin: 20px auto;
+        width: 250px; height: 300px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.26);
+    }
+    .card:nth-child(2n+1) {
+        margin: 20px 0 20px calc(50% - 125px);
+    }
+    .card img {
+        width: 250px; height: 300px;
+    }
+    .text {
+        padding: 9px;
+    }
+    #main-aside {
+        float: none;
+        margin: auto;
+    }
+    .aside-list li {
+        white-space: nowrap;
+        overflow: visible;
+    }
+    .aside-list h3 {
+        font-size: 18px;
+    }
+    .aside-list li a {
+        font-size: 14px;
+    }
+
+    .description-head h1 {
+        font-size: 21px;
+    }
+    .description-head p {
+        font-size: 12px;
+        white-space: pre-line;
+    }
+    .product-components h2 {
+        font-size: 18px;
+    }
+    .product-components h3 {
+        font-size: 15px;
+        white-space: pre-line;
+    }
+    .component p {
+        font-size: 14px;
+    }
+    .store-link-button {
+        font-size: 20px;
+    }
+
+    .intro-pull-left {
+        float: none;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .intro-pull-right {
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+    .intro-pull-left2 {
+        float: none;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .intro h3 {
+        font-size: 16px;
+    }
+    .intro h4 {
+        font-size: 15px;
+    }
+    .intro .vision h3 {
+        font-size: 13px;
+    }
+    .intro img {
+        width: 250px; height: 100px;
+    }
+}
+@media screen and (max-width:767px) and (orientation: landscape) {
+    body {
+        width: auto;
+    }
+    .menu-title {
+        padding: 5px 10px;
+    }
+    .pull-left {
+        width: 195px;
+    }
+    .sns {
+        margin-right: 15px;
+        margin-top: 7px;
+    }
+    .sns img {
+        width: 25px;
+        height: 25px;
+    }
+    #master-title {
+        font-size: 21px;
+    }
+    #master-description {
+        font-size: 15px;
+    }
+    #intro-section {
+        width: auto;
+        float: none;
+    }
+    .intro h1 {
+        font-size: 17px;
+    }
+    .intro p {
+        font-size: 13px;
+    }
+    #bookstore-this-section {
+        float: none;
+        width: auto;
+    }
+    #bookstore-next-section {
+        float: none;
+        width: auto;
+    }
+    .bookstore {
+        margin-left: auto;
+    }
+    .bookstore-detail {
+        width: 250px;
+        margin: auto;
+    }
+    .bookstore h2 {
+        font-size: 16px;
+    }
+    .bookstore h3 {
+        font-size: 16px;
+    }
+    .bookstore p {
+        font-size: 13px;
+    }
+    #store-this-image-section {
+        float: none;
+        width: auto;
+    }
+    #store-next-image-section {
+        float: none;
+        width: auto;
+    }
+    .store-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .store-image img {
+        margin: auto;
+        width: 280px; height: 300px;
+    }
+    .footer {
+        font-size: 14px;
+        height: 110px;
+    }
+
+    #main-section {
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+    .card {
+        margin: 20px auto;
+        width: 250px; height: 300px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.26);
+    }
+    .card:nth-child(2n+1) {
+        margin: 20px 0 20px calc(50% - 125px);
+    }
+    .card img {
+        width: 250px; height: 300px;
+    }
+    .text {
+        padding: 9px;
+    }
+    #main-aside {
+        float: none;
+        margin: auto;
+    }
+    .aside-list li {
+        white-space: nowrap;
+        overflow: visible;
+    }
+    .aside-list h3 {
+        font-size: 18px;
+    }
+    .aside-list li a {
+        font-size: 14px;
+    }
+
+    .description-head h1 {
+        font-size: 21px;
+    }
+    .description-head p {
+        font-size: 12px;
+        white-space: pre-line;
+    }
+    .product-components h2 {
+        font-size: 18px;
+    }
+    .product-components h3 {
+        font-size: 15px;
+        white-space: pre-line;
+    }
+    .component p {
+        font-size: 14px;
+    }
+    .store-link-button {
+        font-size: 20px;
+    }
+
+    .intro-pull-left {
+        float: none;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .intro-pull-right {
+        float: none;
+        margin: auto;
+        width: auto;
+    }
+    .intro-pull-left2 {
+        float: none;
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .intro h3 {
+        font-size: 16px;
+    }
+    .intro h4 {
+        font-size: 15px;
+    }
+    .intro .vision h3 {
+        font-size: 13px;
+    }
+    .intro img {
+        width: 250px; height: 100px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        width: auto;
+    }
+    #intro-section {
+        width: auto;
+        float: none;
+    }
+    #bookstore-this-section {
+        float: none;
+        width: auto;
+    }
+    #bookstore-next-section {
+        float: none;
+        width: auto;
+    }
+    .bookstore {
+        margin-left: auto;
+    }
+    .bookstore-detail {
+        width: 450px;
+        margin-left: calc(50% - 240px);
+    }
+    #store-this-image-section {
+        float: none;
+        width: auto;
+    }
+    #store-next-image-section {
+        float: none;
+        width: auto;
+    }
+    .store-image {
+        text-align: center;
+    }
+    .store-image img {
+        margin: auto;
+    }
+
+    #main-section {
+        float: none;
+        margin: auto;
+    }
+    #main-aside {
+        float: none;
+        margin: auto;
+    }
+    .aside-list li {
+        white-space: nowrap;
+        overflow: visible;
+    }
+
+    .intro-pull-left {
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    .intro-pull-right {
+        float: none;
+        margin: auto;
+    }
+    .intro-pull-left2 {
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+}
+/* @media screen and (min-width: 960px) {
+    body{
+        width: 960px;
+        margin: 0 auto;
+    }
+} */
