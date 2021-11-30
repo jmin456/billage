@@ -4,6 +4,11 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1">
     <title>책 읽는 마을, Billage</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <div class="page-wrapper">
@@ -22,6 +27,12 @@
                     <a href="product.html">
                         <li class="outer-menu-item">
                             <span class="menu-title"><p>상품</p></span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="product_3.html">3개월</a></li>
+                                <li class="inner-menu-item"><a href="product_2.html">2개월</a></li>
+                                <li class="inner-menu-item"><a href="product_1.html">1개월</a></li>
+                                <li class="inner-menu-item"><a href="product_goods.html">굿즈</a></li>
+                            </ul>
                         </li>
                     </a>
                     <a href="story.html">
@@ -70,8 +81,22 @@
                 </div>
             </section>
             <section id="store-this-image-section">
-                <div class="store-image">
-                    <img src="img/zerohundred.PNG" alt="" width="330px" height="333px">
+                <div class="slider">
+                    <div class="this-image-container">
+                        <div class="this-store-image">
+                            <img src="img/zerohundred0.PNG" alt="" width="330px" height="333px">
+                        </div>
+                        <div class="this-store-image">
+                            <img src="img/zerohundred1.jpg" alt="" width="330px" height="333px">
+                        </div>
+                        <div class="this-store-image">
+                            <img src="img/zerohundred2.JPG" alt="" width="330px" height="333px">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-button">
+                    <button id="this-left-button"><</button>
+                    <button id="this-right-button">></button>
                 </div>
             </section>
             <section id="bookstore-next-section">
@@ -90,8 +115,22 @@
                 </div>
             </section>
             <section id="store-next-image-section">
-                <div class="store-image">
-                    <img src="img/seonyuseoga.PNG" alt="" width="330px" height="333px">
+                <div class="slider">
+                    <div class="next-image-container">
+                        <div class="next-store-image">
+                            <img src="img/seonyuseoga0.PNG" alt="" width="330px" height="333px">
+                        </div>
+                        <div class="next-store-image">
+                            <img src="img/seonyuseoga1.JPG" alt="" width="330px" height="333px">
+                        </div>
+                        <div class="next-store-image">
+                            <img src="img/seonyuseoga2.JPG" alt="" width="330px" height="333px">
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-button">
+                    <button id="next-left-button"><</button>
+                    <button id="next-right-button">></button>
                 </div>
             </section>
         </div>
