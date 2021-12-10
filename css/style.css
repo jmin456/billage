@@ -377,27 +377,13 @@ article {
     font-weight: bold;
 }
 
-.more-definition1-img {
+.more-definition1-img, .more-definition2-img, 
+.more-problem1-img, .more-problem2-img {
     display: none;
     position: absolute;
     cursor: pointer;
-}
-.more-definition2-img {
-    display: none;
-    right:5%;
-    position: absolute;
-    cursor: pointer;
-}
-.more-problem1-img {
-    display: none;
-    position: absolute;
-    cursor: pointer;
-}
-.more-problem2-img {
-    display: none;
-    right:5%;
-    position: absolute;
-    cursor: pointer;
+    left: 50%;
+    margin-left: -270px;
 }
 .more-definition1-img img, .more-definition2-img img,
 .more-problem1-img img, .more-problem2-img img {
@@ -633,6 +619,14 @@ article {
     .more-problem2-img img {
         width: 250px; height: 222px;
     }
+    .more-definition1-img, .more-definition2-img, 
+    .more-problem1-img, .more-problem2-img {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -125px;
+}
 }
 
 @media screen and (max-width:767px) and (orientation: landscape) {
@@ -835,6 +829,14 @@ article {
     }
     .more-problem2-img img {
         width: 400px; height: 355px;
+    }
+    .more-definition1-img, .more-definition2-img, 
+    .more-problem1-img, .more-problem2-img {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -200px;
     }
 }
 
